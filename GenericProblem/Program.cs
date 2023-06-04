@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GenericProblem;
+using System;
 
 namespace GenericsProblem
 {
@@ -8,12 +9,13 @@ namespace GenericsProblem
         {
             Console.WriteLine("Welcome to Generics");
 
-            int firstNumber3 = 10;
-            int secondNumber3 = 80;
-            int thirdNumber3 = 50;
+            
+            int firstNumber = 15;
+            int secondNumber = 25;
+            int thirdNumber = 5;
 
-            int result3 = GenericProblem.GenericMax<int>.Max(firstNumber3, secondNumber3, thirdNumber3);
-            Console.WriteLine(result3);
+            int result = MaximumNumber.MaxInt(firstNumber, secondNumber, thirdNumber);
+            Console.WriteLine($"{result} is the greatest number");
         }
     }
 }
