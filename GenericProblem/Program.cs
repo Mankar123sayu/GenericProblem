@@ -1,2 +1,19 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+namespace GenericsProblem
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Welcome to Generics");
+
+            int firstNumber3 = 10;
+            int secondNumber3 = 80;
+            int thirdNumber3 = 50;
+
+            int result3 = GenericProblem.GenericMax<int>.Max(firstNumber3, secondNumber3, thirdNumber3);
+            Console.WriteLine(result3);
+        }
+    }
+}
